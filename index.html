@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti - Una Historia Especial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Canvas para partículas y efectos -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="stars"></div>
+            <div class="glow-circle glow-1"></div>
+            <div class="glow-circle glow-2"></div>
+            <div class="glow-circle glow-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" data-text="Para Ti">Para Ti</h1>
+                <p class="hero-subtitle">Una historia que necesitaba ser contada</p>
+            </div>
+
+            <button class="btn-hero" id="startBtn">
+                <span class="btn-text">Presiona Aquí</span>
+                <span class="btn-glow"></span>
+            </button>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Desplázate</span>
+            <svg viewBox="0 0 24 24">
+                <path d="M12 4v12m0 0l-4-4m4 4l4-4" stroke="white" fill="none" stroke-width="2"
+                    stroke-linecap="round" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE RECUERDOS -->
+    <section class="memories" id="memories">
+        <div class="container">
+            <h2 class="section-title">Recuerdos Que Brillan</h2>
+            <p class="section-subtitle">Cada momento contigo fue especial</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" style="--delay: 0s">
+                    <div class="memory-card">
+                        <img src="WhatsApp Image 2026-05-25 at 10.09.51 PM (3).jpeg" alt="Recuerdo 1">
+                        <div class="memory-overlay">
+                            <p class="memory-date">Nuestro primer te Amo</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-item" style="--delay: 0.2s">
+                    <div class="memory-card">
+                        <img src="WhatsApp Image 2026-05-25 at 10.09.51 PM (2).jpeg" alt="Recuerdo 3">
+                        <div class="memory-overlay">
+                            <p class="memory-date">Negra Hermosa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" style="--delay: 0.1s">
+                    <div class="memory-card">
+                        <img src="WhatsApp Image 2026-05-25 at 10.09.51 PM.jpeg" alt="Recuerdo 2">
+                        <div class="memory-overlay">
+                            <p class="memory-date">Juntos Siempre</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" style="--delay: 0.3s">
+                    <div class="memory-card">
+                        <img src="WhatsApp Image 2026-05-25 at 10.09.50 PM (1).jpeg" alt="Recuerdo 4">
+                        <div class="memory-overlay">
+                            <p class="memory-date">Mi Amor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="--delay: 0.4s">
+                    <div class="memory-card">
+                        <img src="WhatsApp Image 2026-05-25 at 10.09.51 PM (1).jpeg" alt="Recuerdo 5">
+                        <div class="memory-overlay">
+                            <p class="memory-date">Sonrisas de Amor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" style="--delay: 0.5s">
+                    <div class="memory-card">
+                        <img src="WhatsApp Image 2026-05-25 at 10.09.50 PM.jpeg" alt="Recuerdo 6">
+                        <div class="memory-overlay">
+                            <p class="memory-date">Triunfos de Oro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE INTERACTIVA -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <p class="section-subtitle">Una línea del tiempo de momentos que importan</p>
+
+            <div class="timeline">
+                <div class="timeline-item" style="--order: 1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>El Comienzo</h3>
+                        <p class="timeline-date">Hace un tiempo atrás</p>
+                        <p class="timeline-text">Cuando nuestros caminos se cruzaron y todo cambió</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" style="--order: 2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Primeras Risas</h3>
+                        <p class="timeline-date">Pronto después</p>
+                        <p class="timeline-text">Descubrimos que podíamos ser nosotros mismos juntos</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" style="--order: 3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Lugares Especiales</h3>
+                        <p class="timeline-date">Mientras pasaba el tiempo</p>
+                        <p class="timeline-text">Todos los momentos tan bonitos que pasamos</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" style="--order: 4">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Nuestras Aventuras</h3>
+                        <p class="timeline-date">Entre sonrisas</p>
+                        <p class="timeline-text">No pudimos tener una aventura como lo planeamos pero cada día yo las
+                            pensaba como las quería pasar contigo y que fueran muy especiales para los dos</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" style="--order: 5">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Siempre en Mi Corazón</h3>
+                        <p class="timeline-date">Ahora y siempre</p>
+                        <p class="timeline-text">Porque algunas personas dejan una huella eterna</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARTA EMOCIONAL -->
+    <section class="letter-section" id="letter">
+        <div class="letter-background">
+            <div class="blur-shape blur-1"></div>
+            <div class="blur-shape blur-2"></div>
+            <div class="floating-lights"></div>
+        </div>
+
+        <div class="container">
+            <div class="letter-card">
+                <div class="letter-header">
+                    <span class="letter-icon">💌</span>
+                    <h2>Una Carta Para Ti</h2>
+                </div>
+
+                <div class="letter-content">
+                    <p class="letter-text">
+                        Perdón por no ser el chico que tú esperabas.
+                        Perdón por todas las veces que te hice sentir mal cuando lo único que quería era verte feliz.
+                    </p>
+
+                    <p class="letter-text">
+                        Perdón por fallarte... por querer hacer una vida contigo y no pude cumplir.
+                        La verdad es que sí la arruiné contigo, y con el tiempo entendí muchas cosas que antes no veía.
+                    </p>
+
+                    <p class="letter-text">
+                        Tal vez ya eres feliz sin mí.
+                        Tal vez ya encontraste paz lejos de todo lo que vivimos... y aunque me duele admitirlo,
+                        quiero pensar que ahora estás mejor.
+                    </p>
+
+                    <p class="letter-text">
+                        Mientras tú avanzas, yo sigo aquí, atrapado entre recuerdos, canciones,
+                        conversaciones y momentos que todavía viven dentro de mí.
+                        Hay días en los que intento distraerme, en la Universidad en mis proyectos...
+                        pero nada logra apagar todo lo que siento por ti.
+                    </p>
+
+                    <p class="letter-text">
+                        A veces incluso te imagino aquí conmigo, como si nada hubiera cambiado.
+                        Como si todavía pudiera escuchar tu voz, verte sonreír o abrazarte una vez más.
+                        Y entonces llega la realidad... abro los ojos y ya no estás.
+                    </p>
+
+                    <p class="letter-text">
+                        Entendí que hay cosas que cuando se rompen nunca vuelven a ser iguales.
+                        Entendí que el amor también duele pero duele más cuando uno ama de verdad.
+                        como tu me amabas pero yo no te correspondi,
+                        ese amor que sentí por ti era tan fuerte que me hacía sentir cosas tan bonitas. Pero
+                        también me hacía sentir cosas tan tristes
+                        y dolorosas, cuando veía que no podía tenerte como yo quería tenerte y darte todo lo que
+                        merecías.
+                        Pero aun así... si algún día decides regresar,
+                        yo volvería a intentarlo contigo sin pensarlo dos veces.
+                    </p>
+
+                    <p class="letter-text">
+                        Porque fuiste tú.
+                        La mujer que más amé, la que me demostró que es el amor verdadero y más que todo el "yo te amo"
+                        porque cuando uno ama cuida, y ya veo el significado de yo te amo y yo te quiero.
+                        Porque cuando uno ama cuida, pero cuando uno quiere destruye.
+                        Pero aunque yo te amaba, aunque yo te quería ... no supe cómo hacer para que tú lo sintieras
+                        así.
+                        Fuiste la que me enseñó el significado verdadero de amar.
+                        La única persona capaz de hacerme sentir tantas cosas con solo existir.
+                    </p>
+
+                    <p class="letter-text">
+                        Y aunque todo terminó...
+                        aunque fui yo quien arruinó muchas cosas...
+                        aunque quizás ya no me mires igual...
+                        perdóname.
+                    </p>
+
+                    <p class="letter-text">
+                        Ojalá algún día podamos volver a vernos,
+                        hablar como antes,
+                        abrazarnos fuerte
+                        y terminar todo lo que dejamos incompleto.
+                        todos los proyectos todos nuestros anelos que teniamos.
+                    </p>
+
+                    <p class="letter-text">
+                        Porque aunque el tiempo pase,
+                        aunque tomemos caminos distintos,
+                        aunque esto se convierta solo en recuerdos...
+                        yo todavía te amo.
+                    </p>
+
+                    <p class="letter-text">
+                        Y si esta termina siendo la última vez que te lo digo...
+                        entonces solo quiero que sepas algo:
+                        nadie va a ocupar el lugar que tienes dentro de mí.
+                    </p>
+
+                    <p class="letter-text">
+                        Porque estoy decidido que no quiero a nadie más a mi lado, que te quiero a ti a mi lado.
+                        Mientras que yo sé que nunca volverás, pero me gustaría pensar que uno de tantos días
+                        vendrás a mí así como yo iré un día por ti. No será pronto pero sé que iré por tus brazos, por
+                        tus besos,
+                        por esa mujer hermosa que quería para mi vida.
+                    </p>
+
+                    <p class="letter-signature">
+                        Con todo lo que aún siento por ti, mi negra hermosa
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LO QUE NUNCA TE DIJE -->
+    <section class="unsaid-section" id="unsaid">
+        <div class="container">
+            <h2 class="section-title">Lo Que Nunca Te Dije</h2>
+            <p class="section-subtitle">Verdades que guardé en el silencio</p>
+
+            <div class="cards-grid">
+                <div class="flip-card" style="--delay: 0s">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon">✨</div>
+                            <h3>Eras Mi Paz</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>En un mundo caótico, contigo encontraba calma. Tu sola presencia tranquilizaba mi mente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" style="--delay: 0.15s">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon">💫</div>
+                            <h3>Me Hacías Mejor</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Tu amor me inspiraba a ser una mejor versión de mí mismo cada día.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" style="--delay: 0.3s">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon">🌟</div>
+                            <h3>Te Admiro</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>No solo te amaba. Te admiraba profundamente por tu fuerza, tu bondad y tu luz interior.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" style="--delay: 0.45s">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon">💝</div>
+                            <h3>Fuiste Mi Casa</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>No necesitaba un lugar físico. Contigo, en tus brazos, era donde pertenecía.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" style="--delay: 0.6s">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon">🎭</div>
+                            <h3>Tenía Miedo</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Tenía miedo de perder algo tan hermoso. Quizás ese miedo fue lo que no me permitió
+                                decirte cuánto te necesitaba.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" style="--delay: 0.75s">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon">🌹</div>
+                            <h3>Siempre Estarás</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>En cada canción, en cada atardecer, en cada momento bonito... siempre estarás aquí
+                                conmigo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN FINAL - CIELO ESTRELLADO -->
+    <section class="final-section" id="final">
+        <div class="starfield">
+            <div class="stars-container"></div>
+        </div>
+
+        <div class="final-overlay"></div>
+
+        <div class="final-content">
+            <div class="final-text">
+                <h2>Gracias por ser parte de mi historia</h2>
+                <p>Aunque nuestros caminos cambien, siempre serás una estrella en mi cielo nocturno</p>
+            </div>
+
+            <button class="btn-final" id="finalBtn">
+                <span>Cerrar Con Amor</span>
+            </button>
+        </div>
+
+        <div class="falling-lights"></div>
+    </section>
+
+    <!-- Audio para música suave -->
+    <audio id="bgMusic" preload="none">
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/24/audio_d1c4f53d75.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
